@@ -17,22 +17,11 @@ public:
             count++;
             ptr = ptr->next;
         }
-        // cout << "count" << count << endl;
         ptr = head;
-        // if(count % 2 != 0){
-            count = count / 2;
-            while (count--){
-                ptr = ptr->next;
-            }
-            return ptr;
-        // }
-        // else{
-        //     count = count / 2;
-        //     while (count--){
-        //         ptr= ptr->next;
-        //     }
-        //     return ptr;
-        // }
-        
+        count = count / 2;
+        while (count--){
+            ptr = ptr->next;
+        }
+        return ptr;
     }
 };
